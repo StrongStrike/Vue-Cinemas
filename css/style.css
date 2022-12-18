@@ -82,3 +82,105 @@ body {
     line-height: 18px;
     color: var(--white);
 }
+
+.header__nav {
+    background: var(--black);
+    backdrop-filter: blur(7.5px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.header__list {
+    display: flex;
+    column-gap: 30px;
+    
+
+}
+
+.header__link {
+    position: relative;
+    font-family: var(--Montserrat);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white);
+    text-transform: capitalize;
+    padding: 42px 6px;
+    display: inline-block;
+    transition: 500ms;
+    
+}
+
+.header__link:hover {
+    color: var(--linkHover);
+}
+
+.header__link::after {
+    content: '';
+    background: var(--linkHover);
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transition: 500ms;
+    border-radius: 23px 20px 0px 0px;
+}
+
+.header__link:hover::after {
+    content: '';
+    background: var(--linkHover);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+    background: transparent;
+    border: none;
+    display: none;
+}
+
+.menu span {
+    display: block;
+    width: 100%;
+    height: 8px;
+    background: var(--linkHover);
+    border-radius: 3px;
+    transition: 0.5s linear;
+}
+
+.menu:focus span:nth-child(1) {
+    transform: rotate(45deg) translateY(-15px) translateY(25px) translateX(31px) translateX(-22px);
+}
+
+.menu:focus span:nth-child(3) {
+    transform: rotate(-45deg) translateY(16px) translateY(-25px) translateX(32px) translateX(-23px);
+}
+
+.menu:focus span:nth-child(2) {
+    transform: rotate(-45deg);
+    background: transparent;
+}

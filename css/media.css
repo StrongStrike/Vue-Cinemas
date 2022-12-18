@@ -1,0 +1,48 @@
+@media(max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media(max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .header__list {
+        flex-direction: column;
+        position: fixed;
+        top: 90px;
+        left: -200px;
+        width: 200px;
+        align-items: center;        
+        background: #000;
+        transition: 0.5s linear;
+    }
+
+    .menu:focus~.header__list {
+        left: 0;
+    }
+
+    .header__nav {
+        position: relative;
+        padding: 20px 0;
+    }
+}
+
+@media(max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
