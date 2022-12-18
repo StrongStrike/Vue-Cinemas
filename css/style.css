@@ -59,3 +59,26 @@ body {
     color: var(--white);
     background: var(--btnBgHover);
 }
+
+.ads {
+    background: linear-gradient(90.09deg, #3800AF 0%, #BF7204 97.52%, #C27500 100%, #C27500 100%);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ads__link {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.ads__link span {
+    max-width: 166px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--white);
+}
