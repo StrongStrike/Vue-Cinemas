@@ -99,6 +99,25 @@
     .films__card-desc {
         text-align: center;
     }
+
+    .premier .container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .premier {
+        padding-bottom: 50px;
+    }
+
+    .premier__logo {
+        max-width: 445px;
+        width: 100%;
+    }
+
+    .premier__desc {
+        text-align: center;
+    }
 }
 
 @media(max-width: 500px) {
@@ -106,17 +125,37 @@
         font-size: 40px;
         line-height: 45px;
     }
+
+    .premier__logo {
+        margin-bottom: 25px;
+    }
+
+    .premier__desc {
+        margin-bottom: 25px;
+    }
+
+    .premier {
+        margin-bottom: 15px;
+        min-height: 450px;
+        padding-top: 25px;
+    }
 }
 
 @media(max-width: 430px) {
     .header__title {
         font-size: 28px;
         line-height: 35px;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
     .header__btns {
         flex-direction: column;
         align-items: center;
-        row-gap: 30px;
+        row-gap: 15px;
+    }
+
+    .header__desc {
+        margin-bottom: 10px;
     }
 }
