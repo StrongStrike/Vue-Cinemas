@@ -28,6 +28,7 @@ ul {
 
 body {
     font-family: var(--Comfortaa);
+    background: #040D1F;
 }
 
 .container {
@@ -53,6 +54,8 @@ body {
     text-align: center;
     color: var(--black);
     background: var(--btnBg);
+    display: block;
+    transition: .5s linear;
 }
 
 .btn:hover {
@@ -107,7 +110,7 @@ body {
 .header__list {
     display: flex;
     column-gap: 30px;
-    
+
 
 }
 
@@ -122,7 +125,7 @@ body {
     padding: 42px 6px;
     display: inline-block;
     transition: 500ms;
-    
+
 }
 
 .header__link:hover {
@@ -183,4 +186,60 @@ body {
 .menu:focus span:nth-child(2) {
     transform: rotate(-45deg);
     background: transparent;
+}
+
+.header__banner {
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.header__banner-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header__banner-bg {
+    background: rgba(7, 15, 25, 0.75);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.header__banner .container {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header__title {
+    font-family: var(--Montserrat);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: var(--white);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.header__desc {
+    font-family: var(--Montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #C8C8C8;
+    max-width: 570px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.header__btns {
+    display: flex;
+    column-gap: 30px;
 }
