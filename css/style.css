@@ -44,6 +44,19 @@ body {
     line-height: 40px;
     text-transform: capitalize;
     color: var(--title);
+    padding-bottom: 12px;
+    display: inline-block;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--title);
+    width: 100%;
+    height: 2px;
 }
 
 .btn {
@@ -242,4 +255,109 @@ body {
 .header__btns {
     display: flex;
     column-gap: 30px;
+}
+
+.films {
+    padding-top: 63px;
+    padding-bottom: 74px;
+}
+
+.films__title {
+    margin-bottom: 54px;
+}
+
+.films__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 255px);
+    column-gap: 30px;
+}
+
+.films__card {
+    min-height: 367px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+
+}
+
+.films__card-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: 500ms linear;
+}
+
+.films__card-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%);
+    z-index: 1;
+}
+
+.films__card-content {
+    padding: 54px 14px 18px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.films__card-icon {
+    margin-bottom: 12px;
+    transition: 500ms linear;
+}
+
+.films__card-time {
+    font-family: var(--Montserrat);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 10px;
+    color: var(--white);
+    padding: 7px;
+    max-width: 100px;
+    width: 100%;
+    border: 1px solid var(--white);
+    border-radius: 9px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: 500ms linear;
+}
+
+.films__card-title {
+    font-family: var(--Montserrat);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.films__card-desc {
+    font-family: var(--Roboto);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+    max-width: 226px;
+    width: 100%;
+}
+
+.films__card:hover .films__card-img {
+    transform: scale(1.5);
+}
+
+.films__card:hover .films__card-time {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.films__card:hover .films__card-icon {
+    transform: scale(1.8) rotateX(180deg);
+
 }
