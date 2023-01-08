@@ -20,6 +20,17 @@
         max-width: 720px;
     }
 
+    .collections__cards {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+
+    .collections__item {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .header__banner {
         height: 80vh;
     }
@@ -117,6 +128,16 @@
 
     .premier__desc {
         text-align: center;
+    }
+
+    .collections__item {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .collections__title {
+        display: flex;
+        justify-content: center;
     }
 }
 
