@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+    <div class="ads">
+        <a href="" class="ads__link">
+            <img src="img/svg/ads-item.svg" alt="">
+            <span>See no special offer restrictions</span>
+        </a>
+    </div>
     <header class="header">
-        <div class="ads">
-            <a href="" class="ads__link">
-                <img src="img/svg/ads-item.svg" alt="">
-                <span>See no special offer restrictions</span>
-            </a>
-        </div>
         <nav class="header__nav">
             <div class="container">
                 <a href="" class="header__logo">
@@ -28,13 +28,15 @@
                     <span></span>
                 </button>
                 <ul class="header__list">
-                    <li><a href="" class="header__link">Films</a></li>
-                    <li><a href="" class="header__link">Serials</a></li>
-                    <li><a href="" class="header__link">Cartoons</a></li>
-                    <li><a href="" class="header__link">Collections</a></li>
+                    <li><a href="#films" class="header__link">Films</a></li>
+                    <li><a href="#series" class="header__link">Serials</a></li>
+                    <li><a href="#premier" class="header__link">Cartoons</a></li>
+                    <li><a href="#collections" class="header__link">Collections</a></li>
                 </ul>
             </div>
         </nav>
+    </header>
+    <main>
         <div class="header__banner">
             <img src="img/banner.png" alt="" class="header__banner-img">
             <span class="header__banner-bg"></span>
@@ -47,9 +49,7 @@
                 </div>
             </div>
         </div>
-    </header>
-    <main>
-        <section class="films">
+        <section class="films" id="films">
             <div class="container">
                 <h2 class="films__title title">films</h2>
                 <div class="films__cards">
@@ -96,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section class="premier">
+        <section class="premier" id="premier">
             <video src="video/01.mp4" class="premier__video" autoplay loop muted></video>
             <span class="premier__bg"></span>
             <div class="container">
@@ -106,7 +106,7 @@
             </div>
         </section>
 
-        <section class="collections">
+        <section class="collections" id="collections">
             <div class="container">
                 <h2 class="collections__title title">Collections</h2>
                 <div class="collections__cards">
@@ -133,6 +133,56 @@
                         <h3 class="collections__item-title">Star Wars</h3>
                         <img src="img/collections/line.png" alt="" class="collections__item-line">
                         <img src="img/collections/line.png" alt="" class="collections__item-line">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="series" id="series">
+            <div class="container">
+                <h2 class="series__title title">Series</h2>
+                <div class="series__cards">
+                    <div class="series__item">
+                        <img src="img/series/game.png" alt="" class="series__img">
+                        <span class="series__bg"></span>
+                        <h3 class="series__item-title">Game of Thrones</h3>
+                        <p class="series__desc">The time of prosperity is drawing to a close, and the summer, which lasted almost a decade, is dying away. Around the center of power of the Seven Kingdoms, the Iron Throne, a conspiracy is ripening, and during this difficult time, the king decides to seek support from his youth friend Eddard Stark. In a world where everyone - from the king to the mercenary - is eager for power, intrigues and is ready to stick a knife in the back, there is ...</p>
+                        <a href="" class="series__btn btn">Watch now</a>
+                    </div>
+                    <div class="series__item">
+                        <img src="img/series/vision.png" alt="" class="series__img">
+                        <span class="series__bg"></span>
+                        <img src="img/play.svg" alt="" class="series__icon">
+                        <h3 class="series__item-title">Wanda Vision</h3>
+                        
+                    </div>
+                    <div class="series__item">
+                        <img src="img/series/flash.png" alt="" class="series__img">
+                        <span class="series__bg"></span>
+                        <img src="img/play.svg" alt="" class="series__icon">
+                        <h3 class="series__item-title">The Flash</h3>
+                        
+                    </div>
+                    <div class="series__item">
+                        <img src="img/series/great.png" alt="" class="series__img">
+                        <span class="series__bg"></span>
+                        <img src="img/play.svg" alt="" class="series__icon">
+                        <h3 class="series__item-title">The Great</h3>
+                        
+                    </div>
+                    <div class="series__item">
+                        <img src="img/series/gotham.png" alt="" class="series__img">
+                        <span class="series__bg"></span>
+                        <img src="img/play.svg" alt="" class="series__icon">
+                        <h3 class="series__item-title">GOTHAM</h3>
+                        
+                    </div>
+                    <div class="series__item">
+                        <img src="img/series/witcher.png" alt="" class="series__img">
+                        <span class="series__bg"></span>
+                        <img src="img/play.svg" alt="" class="series__icon">
+                        <h3 class="series__item-title">The witcher</h3>
+                        
                     </div>
                 </div>
             </div>
