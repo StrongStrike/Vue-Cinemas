@@ -143,6 +143,11 @@
         grid-column-start: 3;
         grid-column-end: 5;
     }
+
+    .footer .container {
+        flex-direction: column;
+        row-gap: 25px;
+    }
 }
 
 @media(max-width: 576px) {
@@ -310,5 +315,10 @@
 
     .header__desc {
         margin-bottom: 10px;
+    }
+
+    .footer__desc {
+        font-size: 13px;
+        line-height: 15px;
     }
 }
